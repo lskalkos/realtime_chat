@@ -1,0 +1,36 @@
+body {
+  padding-top: 70px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.error{
+	display: none;
+}
+
+.active{
+	color: #d9534f;
+	display: block;
+}
+
+#chat_wrap{
+	display: none;
+}
+
+#chat_row{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#chat{
+	overflow-y: auto;
+	height: 200px;
+}
+
+#user-list{
+	overflow-y: auto;
+	height: 200px;
+}

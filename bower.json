@@ -1,0 +1,21 @@
+{
+  "name": "real_time",
+  "version": "0.0.0",
+  "authors": [
+    "lskalkos"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "angular": "~1.3.8",
+    "jquery": "~2.1.3"
+  }
+}

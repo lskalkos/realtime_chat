@@ -1,0 +1,69 @@
+<html ng-app='polls'>
+	<head>
+		<title>Chat with socket.io & Node.js</title>
+		<link rel="stylesheet" href="libs/css/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="libs/js/jquery/jquery.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/controllers.js"></script>
+	</head>
+	<body ng-controller='PollListCtrl'>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Real-time Chat</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div class="container">
+			<div id="username_wrap" class="row">
+				<p>Please enter a username:</p>
+				<div class="col-md-8">
+					<form id="form_username" class="form-inline">
+						<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" size="50" class="form-control" id="username" placeholder="Username">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<p class="error">That username is already taken. Please create another one.</p>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+			<div id="chat_wrap">
+				<div id="chat_row" class="row">
+					<div class="col-md-8">
+						<u>Chat</u>
+						<div id="chat"></div>
+					</div>
+					<div class="col-md-4">
+						<u>Users present</u><br />
+						<div id="user-list"></div>
+					</div>
+				</div>
+				<form id="form_message">
+					<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control" rows="3" id="message" placeholder="Enter message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			
+		</div><!-- /.container -->
+	</body>
+</html>

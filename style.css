@@ -1,0 +1,13 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#chat{
+	border: 1px solid red;
+	height: 100px;
+	width: 300px;
+}
